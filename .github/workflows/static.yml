@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+  schedule:
+    - cron: "*/3 * * * *"   # Runs every day at 2 AM UTC
+
 permissions:
   contents: read
   pages: write
